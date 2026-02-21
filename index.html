@@ -8,75 +8,143 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #ece6de;
+      background: #faf9f7;
       color: #1a1a1a;
-      line-height: 1.7;
-      padding: 2rem 1.5rem 4rem;
+      line-height: 1.75;
+      padding: 0;
+    }
+    .hero {
+      background: #ece6de;
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(120,110,95,0.15);
+    }
+    .hero h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+    .hero .subtitle { color: #6b6560; font-size: 0.875rem; margin-top: 0.25rem; }
+    .hero .updated { color: #8a8279; font-size: 0.8125rem; margin-top: 1rem; }
+    .content {
       max-width: 640px;
       margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
     }
-    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
-    .subtitle { color: #6b6560; font-size: 0.875rem; margin-bottom: 2rem; }
-    h2 { font-size: 1.125rem; margin-top: 2rem; margin-bottom: 0.5rem; }
-    p, li { font-size: 0.9375rem; margin-bottom: 0.75rem; }
+    h2 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      margin-top: 2.25rem;
+      margin-bottom: 0.625rem;
+      color: #1a1a1a;
+      letter-spacing: -0.01em;
+    }
+    p, li { font-size: 0.9375rem; margin-bottom: 0.75rem; color: #3a3a3a; }
     ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
-    li { margin-bottom: 0.35rem; }
-    a { color: #2b5e49; }
-    .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(120,110,95,0.22); color: #6b6560; font-size: 0.8125rem; }
+    li { margin-bottom: 0.5rem; }
+    a { color: #2b5e49; text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { color: #1a4a36; }
+    strong { color: #1a1a1a; }
+    .divider { height: 1px; background: rgba(120,110,95,0.12); margin: 2.25rem 0; }
+    .footer {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 3rem;
+      border-top: 1px solid rgba(120,110,95,0.12);
+      color: #8a8279;
+      font-size: 0.8125rem;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="subtitle">Slate — Bill & Credit Tracker</p>
+  <div class="hero">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Slate — Bill & Credit Tracker</p>
+    <p class="updated">Last updated: February 21, 2026</p>
+  </div>
 
-  <p>Last updated: February 21, 2026</p>
+  <div class="content">
+    <h2>1. Introduction</h2>
+    <p>Slate ("we", "our", or "us") is a mobile application designed to help you track, manage, and stay on top of your bills and payments. We are committed to protecting your personal information and your right to privacy. This Privacy Policy describes what information we collect, how we use it, and what rights you have in relation to it.</p>
+    <p>By using Slate, you agree to the collection and use of information in accordance with this policy. If you do not agree with the terms of this policy, please do not access or use the application.</p>
 
-  <h2>Overview</h2>
-  <p>Slate is a bill tracking app that helps you manage and pay your bills on time. Your privacy matters to us. This policy explains what data we collect, how we use it, and your rights.</p>
+    <h2>2. Information We Collect</h2>
+    <p>We collect only the minimum information necessary to provide you with a functional and useful bill tracking experience.</p>
+    <p><strong>2.1 Account Information</strong></p>
+    <p>If you choose to sign in with Google, we receive your name and email address from Google's authentication service. This information is used solely to create and identify your account for cloud syncing purposes. We do not access your Google contacts, calendar, or any other Google services.</p>
+    <p><strong>2.2 Bill & Financial Data</strong></p>
+    <p>You may enter bill-related information into the app, including bill names, amounts, due dates, payment status, categories, and optional notes. This data is entered voluntarily by you and is used only to provide the core functionality of the application.</p>
+    <p><strong>2.3 User Preferences</strong></p>
+    <p>We store your app preferences including your selected currency, locale, notification settings, and display preferences. These are used to personalize your experience within the app.</p>
+    <p><strong>2.4 Purchase Information</strong></p>
+    <p>If you purchase Slate Pro (our premium upgrade), the transaction is processed entirely by Apple's In-App Purchase system. We do not collect, process, or store any payment details such as credit card numbers, billing addresses, or financial account information. We only receive a confirmation that a valid purchase was made.</p>
 
-  <h2>What We Collect</h2>
-  <p>When you use Slate, we may collect the following information:</p>
-  <ul>
-    <li><strong>Account information</strong> — If you sign in with Google, we receive your name and email address to create your account.</li>
-    <li><strong>Bill data</strong> — Bill names, amounts, due dates, categories, notes, and payment status that you enter into the app.</li>
-    <li><strong>Preferences</strong> — Your chosen currency, notification settings, and display preferences.</li>
-  </ul>
+    <h2>3. How We Store Your Data</h2>
+    <p><strong>3.1 Local Storage</strong></p>
+    <p>All bill data and preferences are stored locally on your device using your browser's localStorage. The app is designed to work fully offline. Your data remains on your device and is accessible only through the Slate application.</p>
+    <p><strong>3.2 Cloud Sync (Optional)</strong></p>
+    <p>If you sign in with your Google account, your bill data is synced to our cloud infrastructure hosted on Supabase, a secure and trusted cloud platform. Cloud sync enables you to access your bills across multiple devices. All data transmitted between your device and our servers is encrypted in transit using TLS (Transport Layer Security). You may use the app without signing in, in which case no data leaves your device.</p>
 
-  <h2>How We Store Your Data</h2>
-  <ul>
-    <li><strong>Locally on your device</strong> — All bill data is stored on your device first. The app works fully offline.</li>
-    <li><strong>Cloud sync (optional)</strong> — If you sign in with Google, your data is synced to our cloud database (hosted on Supabase) so you can access it across devices.</li>
-  </ul>
+    <h2>4. How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+      <li>To provide, operate, and maintain the bill tracking functionality of the app</li>
+      <li>To sync your data across devices when you are signed in</li>
+      <li>To send you local notification reminders about upcoming, due, and overdue bills (if enabled)</li>
+      <li>To process and verify your Pro upgrade purchase status</li>
+      <li>To improve and optimize the app experience</li>
+    </ul>
+    <p>We do not use your data for advertising, profiling, or any purpose unrelated to the core functionality of Slate.</p>
 
-  <h2>What We Don't Do</h2>
-  <ul>
-    <li>We do <strong>not</strong> sell your personal data to anyone.</li>
-    <li>We do <strong>not</strong> share your data with third-party advertisers.</li>
-    <li>We do <strong>not</strong> use tracking or analytics tools to monitor your behavior.</li>
-    <li>We do <strong>not</strong> store photos or images. If receipt scanning is added in the future, images are processed temporarily and immediately deleted.</li>
-  </ul>
+    <h2>5. What We Do Not Do</h2>
+    <ul>
+      <li>We do <strong>not</strong> sell, rent, or trade your personal information to any third parties</li>
+      <li>We do <strong>not</strong> share your data with advertisers or marketing companies</li>
+      <li>We do <strong>not</strong> use analytics, tracking pixels, or behavioral monitoring tools</li>
+      <li>We do <strong>not</strong> collect your location, device identifiers, or usage patterns</li>
+      <li>We do <strong>not</strong> store photographs or images — if image-based features (such as receipt scanning) are introduced in future updates, images will be processed temporarily in memory and immediately discarded</li>
+      <li>We do <strong>not</strong> access any data on your device beyond what you explicitly enter into the app</li>
+    </ul>
 
-  <h2>Third-Party Services</h2>
-  <ul>
-    <li><strong>Google Sign-In</strong> — Used for authentication. Google's privacy policy applies to the sign-in process.</li>
-    <li><strong>Supabase</strong> — Used to store synced data securely in the cloud. Data is encrypted in transit.</li>
-    <li><strong>Apple In-App Purchases</strong> — Used to process payments for the Pro upgrade. Apple's privacy policy applies to transactions.</li>
-  </ul>
+    <h2>6. Third-Party Services</h2>
+    <p>Slate integrates with the following third-party services. Each service has its own privacy policy governing their handling of your data:</p>
+    <ul>
+      <li><strong>Google Sign-In (Google LLC)</strong> — Used for account authentication. We receive only your name and email. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><strong>Supabase Inc.</strong> — Used as our cloud database for syncing bill data. Data is encrypted in transit and at rest. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></li>
+      <li><strong>Apple Inc.</strong> — Used for In-App Purchase processing. All payment handling is managed by Apple. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
+    </ul>
 
-  <h2>Notifications</h2>
-  <p>If you enable bill reminders, notifications are scheduled locally on your device. We do not use push notification servers or track notification interactions.</p>
+    <h2>7. Notifications</h2>
+    <p>Slate offers optional bill reminder notifications to help you stay on top of due dates. These notifications are scheduled and delivered entirely on your device using local notification APIs. We do not use remote push notification servers, and we do not track whether you interact with, dismiss, or act on any notification. You can enable or disable reminders at any time from the Settings page within the app.</p>
 
-  <h2>Deleting Your Data</h2>
-  <p>You can delete all your data at any time from the Settings page in the app using the "Reset all data" option. This removes all local data and, if you are signed in, all cloud data associated with your account.</p>
+    <h2>8. Data Retention</h2>
+    <p>Your data is retained for as long as you use the application. Local data persists on your device until you clear it or uninstall the app. Cloud-synced data is stored on our servers until you explicitly delete it or delete your account. We do not retain data for inactive accounts beyond what is necessary to provide the service.</p>
 
-  <h2>Children's Privacy</h2>
-  <p>Slate is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+    <h2>9. Your Rights & Data Deletion</h2>
+    <p>You have the right to access, modify, and delete your personal data at any time. Slate provides a "Reset all data" option within the Settings page of the app. Using this option will:</p>
+    <ul>
+      <li>Permanently delete all bill data and preferences stored locally on your device</li>
+      <li>Permanently delete all cloud-synced data associated with your account (if signed in)</li>
+      <li>Reset the app to its initial state</li>
+    </ul>
+    <p>If you wish to have your data deleted but are unable to access the app, you may contact us at the email address provided below and we will process your request within 30 days.</p>
 
-  <h2>Changes to This Policy</h2>
-  <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+    <h2>10. Data Security</h2>
+    <p>We take the security of your data seriously. All data transmitted between your device and our cloud servers is encrypted using industry-standard TLS encryption. Our cloud infrastructure provider (Supabase) implements additional security measures including row-level security policies, encrypted storage, and regular security audits. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
 
-  <h2>Contact</h2>
-  <p>If you have questions about this privacy policy, you can reach us at <a href="mailto:slatedeveloper@gmail.com">slatedeveloper@gmail.com</a>.</p>
+    <h2>11. Children's Privacy</h2>
+    <p>Slate is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have inadvertently collected data from a child under 13, we will take steps to delete that information as quickly as possible. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+
+    <h2>12. International Data Transfers</h2>
+    <p>If you are accessing Slate from outside the United States, please be aware that your data may be transferred to, stored, and processed in the United States or other countries where our service providers operate. By using the app, you consent to the transfer of your information to these jurisdictions, which may have different data protection laws than your country of residence.</p>
+
+    <h2>13. Changes to This Policy</h2>
+    <p>We reserve the right to update or modify this Privacy Policy at any time. When we make changes, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically to stay informed about how we are protecting your information. Continued use of the app after any changes constitutes your acceptance of the updated policy.</p>
+
+    <div class="divider"></div>
+
+    <h2>14. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please don't hesitate to reach out:</p>
+    <p><strong>Email:</strong> <a href="mailto:slatedeveloper@gmail.com">slatedeveloper@gmail.com</a></p>
+    <p>We will do our best to respond to all inquiries within a reasonable timeframe.</p>
+  </div>
 
   <div class="footer">
     <p>&copy; 2026 Slate. All rights reserved.</p>
